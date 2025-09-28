@@ -58,10 +58,12 @@ const toggleMenu = () => {
 </script>
 
 <style scoped>
-/* 基础样式 */
+/* 基础样式 - 毛玻璃半透明效果 */
 .header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(229, 231, 235, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -125,14 +127,16 @@ const toggleMenu = () => {
   border-radius: 3px;
 }
 
-/* 移动端菜单 */
+/* 移动端菜单 - 毛玻璃半透明效果 */
 .mobile-menu {
   position: absolute;
   top: 60px;
   left: 0;
   right: 0;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(229, 231, 235, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .mobile-nav-list {

@@ -35,10 +35,15 @@ import Header from './components/Header.vue';
 </template>
 
 <style scoped>
+* {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #e5e7eb;
 }
 
 .main-content {
